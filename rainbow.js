@@ -43,7 +43,6 @@ const vals = getColorValues(walter);
 function makeSpectrum() {
     getNextValues(vals);
     walter.style.color = convNumsToColor(vals);
-    console.log(walter.style.color);
 }
 
-setInterval(makeSpectrum, 10);
+setInterval(makeSpectrum, 1);
