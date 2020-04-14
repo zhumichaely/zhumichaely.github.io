@@ -1,3 +1,3 @@
-I like fire trucks and moster trucks
+To view, visit [this link](zhumichaely.com)
 
-walter
+There isn't any functionality yet, just me messing around with colors
