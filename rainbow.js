@@ -5,7 +5,7 @@ function convColorToNums(color) {
 
 function getColorValues(element) {
   const styles = getComputedStyle(element);
-  return convColorToNums(styles.color);
+  return convColorToNums(styles.backgroundColor);
 }
 
 function getNextValues(nums) {
@@ -37,12 +37,12 @@ function convNumsToColor(nums) {
 }
 
 const rgbRegex = /rgb?\((\d{1,3}), ?(\d{1,3}), ?(\d{1,3})\)/;
-const walter = document.getElementById("walter");
-const vals = getColorValues(walter);
+const border = document.getElementById("border");
+const vals = getColorValues(border);
 
 function makeSpectrum() {
     getNextValues(vals);
-    walter.style.color = convNumsToColor(vals);
+    border.style.backgroundColor = convNumsToColor(vals);
 }
 
 setInterval(makeSpectrum, 1);
