@@ -61,14 +61,12 @@ h1 {
   cursor: pointer;
 }
 
-/*
-#nav:hover #navcontent {
+/* #nav:hover #navcontent {
   display: block;
-}
-*/
+} */
 
 #navcontent {
-  position: absolute;
+  /* position: absolute; */
   display: none;
   list-style-type: none;
   margin: 0%;
@@ -80,7 +78,7 @@ h1 {
   padding: 1% 10% 0% 10%;
 }
 
-#navcontent a {
+#nav a {
   padding: 3% 0%;
   text-align: center;
   display: block;
@@ -88,6 +86,6 @@ h1 {
   text-decoration: none;
 }
 
-#navcontent a:hover {
+#nav a:hover {
   background-color: #808080;
 }
