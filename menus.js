@@ -1,7 +1,8 @@
 const menuButton = document.getElementById("navbutton");
+const menu = document.getElementById("navcontent");
+menu.style.display = "none";
 menuButton.addEventListener("click", () => {
-  const menu = document.getElementById("navcontent"),
-    image = menuButton.children[0];
+  const image = menuButton.children[0];
   if (menu.style.display === "none") {
     image.setAttribute("src", "images/upArrow.png");
     menu.style.display = "block";
