@@ -58,11 +58,14 @@ h1 {
 
 #navbutton:hover {
   background-color: #808080;
+  cursor: pointer;
 }
 
+/*
 #nav:hover #navcontent {
   display: block;
 }
+*/
 
 #navcontent {
   position: absolute;
