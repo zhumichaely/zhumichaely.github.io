@@ -8,7 +8,7 @@ menuButton.addEventListener("click", () => {
   if (getComputedStyle(menu).display === "none") {
     anim = requestAnimationFrame(menuDown);
   } else {
-    links.style.top = links.scrollHeight;
+    links.style.top = "100%";
     anim = requestAnimationFrame(menuUp);
   }
 });
@@ -16,7 +16,7 @@ menuButton.addEventListener("click", () => {
 function menuDown() {
   const pos = parseFloat(getComputedStyle(links).top);
   const end = links.scrollHeight;
-  if (pos < end) {
+  if (pos <= end - 20) {
     links.style.top = (pos + 20) + "px";
     anim = requestAnimationFrame(menuDown);
   }
@@ -30,15 +30,14 @@ function menuDown() {
 
 function menuUp() {
   const pos = parseFloat(getComputedStyle(links).top);
-  const end = menu.scrollHeight / 3;
-  console.log(pos);
-  if (pos > end) {
+  const end = menuButton.scrollHeight;
+  if (pos >= end + 20) {
     links.style.top = (pos - 20) + "px";
     anim = requestAnimationFrame(menuUp);
   }
   else {
-    menu.style.display = "none";
     links.style.top = "100%";
+    menu.style.display = "none";
     image.setAttribute("src", "images/downArrow.png");
     cancelAnimationFrame(anim);
   }
