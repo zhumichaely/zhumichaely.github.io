@@ -79,7 +79,7 @@ h1 {
 
 .section {
   padding: 1% 190px 0% 8%;
-  margin-right: 8%;
+  margin-right: 6.5%;
 }
 
 #nav a {
@@ -98,4 +98,17 @@ h1 {
   position: absolute;
   width: 100%;
   top: 100%;
+}
+
+@media only screen and (max-width: 800px) {
+  #sidebar {
+    display: none;
+  }
+  h1 {
+    padding-right: 0%;
+  }
+  .section {
+    padding-right: 8%;
+    margin-right: 0%;
+  }
 }
