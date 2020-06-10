@@ -14,7 +14,7 @@ body {
 }
 
 h1 {
-  font-size: 35px;
+  font-size: 220%;
   text-align: center;
   padding-right: 190px;
 }
@@ -110,5 +110,21 @@ h1 {
   .section {
     padding-right: 8%;
     margin-right: 0%;
+  }
+}
+
+@media only screen and (max-device-width: 800px) {
+  #sidebar {
+    display: none;
+  }
+  h1 {
+    padding-right: 0%;
+  }
+  .section {
+    padding-right: 8%;
+    margin-right: 0%;
+  }
+  #main {
+    font-size: 250%;
   }
 }
