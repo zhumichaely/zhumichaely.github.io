@@ -1,3 +1,7 @@
+html {
+  -webkit-text-size-adjust: 100%;
+}
+
 body {
   font-family: "Open Sans", sans-serif;
   padding: 0%;
@@ -100,6 +104,17 @@ h1 {
   top: 100%;
 }
 
+#linkbutton {
+  text-align: center;
+  display: none;
+}
+
+#linkbutton img {
+  margin-top: 2.5%;
+  width: 24px;
+  height: auto;
+}
+
 @media only screen and (max-width: 800px) {
   #sidebar {
     display: none;
@@ -113,18 +128,57 @@ h1 {
   }
 }
 
-@media only screen and (max-device-width: 800px) {
+@media only screen and (max-device-width: 1000px) {
   #sidebar {
+    /* display: none; */
+    width: 40%;
+    height: auto;
+    left: 30%;
+    /* bottom: 0; */
+  }
+  #border {
+    display: none;
+  }
+  #nav {
+    width: 100%;
+  }
+  #linkbutton {
+    position: relative;
+    display: block;
+  }
+  #links {
+    /* position: relative; */
+  }
+  #navbutton {
     display: none;
   }
   h1 {
     padding-right: 0%;
+    margin-top: 8%;
   }
   .section {
     padding-right: 8%;
     margin-right: 0%;
   }
-  #main {
-    font-size: 250%;
+  body {
+    font-size: 24px;
+  }
+}
+
+@media only screen and (max-device-width: 750px) {
+  body {
+    font-size: 32px;
+  }
+  #linkbutton img {
+    width: 32px;
+  }
+}
+
+@media only screen and (max-device-width: 500px) {
+  body {
+    font-size: 40px;
+  }
+  #linkbutton img {
+    width: 40px;
   }
 }
